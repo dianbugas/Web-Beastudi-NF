@@ -20,10 +20,18 @@
 
     <a class="go-top"><i class="fa fa-angle-up"></i></a>
 		
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="bg-primary footer text-white" role="contentinfo">
 		<div class="card text-center">
 			<div class="site-info container">
-				<a href="<?php echo esc_url(__('https://wordpress.org/', 'sydney')); ?>"><?php printf(__('Copyright %s', 'sydney'), '&copy; STT Terpadu Nurul Fikri'); ?></a>
+				<a style="	height:60px;
+    						line-height:60px;
+							bottom: 0;
+							width: 100%;
+							padding-top: 25px;
+							color:#FFFFFF;
+							font-family: 'Roboto';
+							font-size: #000000;"  
+				href="<?php echo esc_url(__('https://wordpress.org/', 'sydney')); ?>"><?php printf(__('Copyright %s', 'sydney'), '&copy; STT Terpadu Nurul Fikri'); ?></a>
 			</div><!-- .site-info -->
 		</div><!-- .card text-center -->
 	</footer><!-- #colophon -->
