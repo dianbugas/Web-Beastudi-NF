@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer.
  *
@@ -13,18 +14,18 @@
 
 	<?php do_action('sydney_before_footer'); ?>
 
-	<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+	<?php if (is_active_sidebar('footer-1')) : ?>
 		<?php get_sidebar('footer'); ?>
 	<?php endif; ?>
 
     <a class="go-top"><i class="fa fa-angle-up"></i></a>
 		
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sydney' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'sydney' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %2$s by %1$s.', 'sydney' ), 'aThemes', '<a href="https://athemes.com/theme/sydney" rel="designer">Sydney</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="card text-center">
+			<div class="site-info container">
+				<a href="<?php echo esc_url(__('https://wordpress.org/', 'sydney')); ?>"><?php printf(__('Copyright %s', 'sydney'), '&copy; STT Terpadu Nurul Fikri'); ?></a>
+			</div><!-- .site-info -->
+		</div><!-- .card text-center -->
 	</footer><!-- #colophon -->
 
 	<?php do_action('sydney_after_footer'); ?>
