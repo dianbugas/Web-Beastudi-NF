@@ -17,32 +17,21 @@ $container = get_theme_mod('understrap_container_type');
 
 <?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
 
-<div class="wrapper" id="wrapper-footer">
+					<footer style="height:50px;
+								   line-height:50px;" 
+								   class="bg-info footer text-white" id="colophon">
 
-	<div class="<?php echo esc_attr($container); ?>">
+						<div class="text-center">
+							<div class="site-info container">
+							 <a style="font-family: 'Roboto';
+									   font-size: #000000;
+									   color:#ffffff"
+									   href="<?php echo esc_url( __( 'http://wordpress.org/', 'understrap' ) ); ?>"><?php printf( __( '%s', 'understrap' ), 'Copyright &copy; STT Terpadu Nurul Fikri' ); ?></a>
 
-		<div class="row">
+							</div>
+						</div>
 
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
-</div><!-- wrapper end -->
-
+					</footer><!-- #colophon -->
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
